@@ -18,8 +18,6 @@
 }
 
 .navigation {
-  background-image: linear-gradient(to right, transparent 50%, $primary-color 50%);
-  transition: .2s ease;
 
   @include mobile {
     background-image: linear-gradient(to right, transparent 70%, $primary-color 30%);
