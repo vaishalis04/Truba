@@ -1,427 +1,615 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Truba</title>
 
     <!-- mobile responsive meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
     <!-- ** Plugins Needed for the Project ** -->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
     <!-- slick slider -->
-    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
     <!-- themefy-icon -->
-    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
     <!-- animation css -->
-    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <link rel="stylesheet" href="plugins/animate/animate.css" />
     <!-- aos -->
-    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <link rel="stylesheet" href="plugins/aos/aos.css" />
     <!-- venobox popup -->
-    <link rel="stylesheet" href="plugins/venobox/venobox.css">
+    <link rel="stylesheet" href="plugins/venobox/venobox.css" />
 
     <!-- Main Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<!-- jQuery (must load first) -->
-
-
-</head>
-<style>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- jQuery (must load first) -->
+  </head>
+  <style>
     /* Submenu visibility */
-    .dropdown-submenu:hover>.submenu {
-        display: block !important;
+    .dropdown-submenu:hover > .submenu {
+      display: block !important;
     }
 
     /* Positioning submenu */
     .dropdown-submenu .submenu {
-        top: 0;
-        left: 100%;
-        position: absolute;
+      top: 0;
+      left: 100%;
+      position: absolute;
     }
 
     /* Arrow alignment */
-    .dropdown-submenu>a::after {
-        content: '\25B6';
-        /* Right arrow */
-        float: right;
+    .dropdown-submenu > a::after {
+      content: "\25B6";
+      /* Right arrow */
+      float: right;
     }
 
     /* Mobile responsiveness */
     @media (max-width: 768px) {
-        .dropdown-menu {
-            width: 100% !important;
-            position: static !important;
-        }
+      .dropdown-menu {
+        width: 100% !important;
+        position: static !important;
+      }
 
-        .dropdown-submenu .submenu {
-            left: 0 !important;
-        }
+      .dropdown-submenu .submenu {
+        left: 0 !important;
+      }
     }
-</style>
+  </style>
 
-
-
-
-<body>
-
-
-
-
+  <body>
     <!-- header -->
     <header class="fixed-top header">
-        <!-- top header -->
-        <!-- navbar -->
-        <div class="navigation w-100" style="margin-top: 1rem;">
-            <div class="">
-                <nav class="navbar navbar-expand-lg navbar-light p-0" style="padding: 0px;position: relative;">
+        <div class="navigation w-100" style="margin-top: 0%; background: #9d303600;">
+          <nav class="navbar navbar-expand-lg navbar-light p-0 w-100" >
+             <a class="navbar-brand d-flex align-items-center" href="index.html" style="height: 6rem; ;">
+              <img src="images/trubalogo.png" alt="logo" style="height: 100%; width: auto; background: #232130; padding: 10px; ">
+            </a>
+            <button  class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon " ></span>
+            </button>
+      
+           
+      
+            <div class="collapse navbar-collapse" id="navigation">
+              <ul
+                class="navbar-nav ml-auto text-center"
+                style="padding-left: 0px"
+                style="height: 2rem"
+              >
+                <li class="nav-item dropdown view d-flex align-items-center">
+                  <a
+                    class="nav-link"
+                    href="index.html"
+                    id="aboutLink"
+                    style="display: inline-block; padding: 15px 0px 15px 0px"
+                  >
+                    Home
+                  </a>
+                </li>
 
-                    <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse"
-                        data-target="#navigation" aria-controls="navigation" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class=" view d-flex align-items-center" style="background: #232130;
-                    width: 24%;
-                    height: 5rem;
-                    /* border-radius: 1px 2px 258px 0px; */
-                    position: absolute;
-                    z-index: 10000;
-                    box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; ">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/trubalogo.png" alt="logo" style="
-                            position: absolute;
-                            z-index: 10000;
-                            width: 100%;
-                            top: 0px;
-                            left: 0;
-                            box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; ">
-                        </a>
+                <li
+                  class="nav-item dropdown view d-flex align-items-center asdfasdfas"
+                  id="asdfasdfas"
+                >
+                  <a
+                    class="nav-link @@about"
+                    href="about.html"
+                    id="aboutLink"
+                    style="
+                      display: inline-block;
+                      margin-right: 5px;
+                      padding: 10px 0px 10px 0px;
+                    "
+                  >
+                    About
+                  </a>
+                  <a
+                    class="nav-link dropdown-toggle p-0"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    style="display: inline-block"
+                  >
+                    <span class="caret"></span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="">BOG Members Message</a>
+                    <a class="dropdown-item" href=""
+                      >Director/Principal Message</a
+                    >
+                    <a class="dropdown-item" href="">Affiliation & MOU's</a>
+                    <a class="dropdown-item" href="">Courses Offered</a>
+                    <a class="dropdown-item" href="">Antiragging</a>
+                    <a class="dropdown-item" href=""
+                      >Infrastructure & facilities</a
+                    >
+                    <a class="dropdown-item" href="">IIC</a>
+                    <a class="dropdown-item" href="">IAEC</a>
+                    <a class="dropdown-item" href="">PO's / PEO's / GA's</a>
+                    <a class="dropdown-item" href="">News Letter</a>
+                    <a class="dropdown-item" href="">Leave Policies</a>
+                  </div>
+                </li>
 
+                <li class="nav-item dropdown view d-flex align-items-center">
+                  <a
+                    class="nav-link @@about"
+                    href=""
+                    id="aboutLink"
+                    style="
+                      display: inline-block;
+                      margin-right: 5px;
+                      padding: 10px 0px 10px 0px;
+                    "
+                  >
+                    Academics
+                  </a>
+                  <a
+                    class="nav-link dropdown-toggle p-0"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    style="display: inline-block"
+                  >
+                    <span class="caret"></span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-submenu">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center submenu-toggle"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        Faculty & staffs
+                      </a>
+
+                      <div
+                        class="dropdown-menu submenu"
+                        style="
+                          top: 0;
+                          left: 100%;
+                          display: none;
+                          position: absolute;
+                          min-width: 200px;
+                        "
+                      >
+                        <a class="dropdown-item" href="">
+                          Faculty Details 2023-2024</a
+                        >
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        Academic Calender
+                      </a>
+                    </div>
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        Time Table
+                      </a>
+                    </div>
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        Syllabus
+                      </a>
+                    </div>
+                    <div class="dropdown-submenu">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center submenu-toggle"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        Research and Awards
+                      </a>
+
+                      <div
+                        class="dropdown-menu submenu"
+                        style="
+                          top: 0;
+                          left: 100%;
+                          display: none;
+                          position: absolute;
+                          min-width: 200px;
+                        "
+                      >
+                        <a class="dropdown-item" href=""> Year 2018-2023</a>
+                      </div>
+                    </div>
+                    <div class="dropdown-submenu">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center submenu-toggle"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        E Learning Material
+                      </a>
+
+                      <div
+                        class="dropdown-menu submenu"
+                        style="
+                          top: 0;
+                          left: 100%;
+                          display: none;
+                          position: absolute;
+                          min-width: 200px;
+                        "
+                      >
+                        <a class="dropdown-item" href="">B.Pharm I Year</a>
+                        <a class="dropdown-item" href="">B.Pharm II Year</a>
+                        <a class="dropdown-item" href="">B.Pharm III Year</a>
+                        <a class="dropdown-item" href="">B.Pharm IV Year</a>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        Academic Rules
+                      </a>
+                    </div>
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        RGPV University Examination Rules book
+                      </a>
+                    </div>
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        Attendence Rules
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown view d-flex align-items-center">
+                  <a
+                    class="nav-link @@about"
+                    href=""
+                    id="aboutLink"
+                    style="
+                      display: inline-block;
+                      margin-right: 5px;
+                      padding: 10px 0px 10px 0px;
+                    "
+                  >
+                    Admissions
+                  </a>
+                  <a
+                    class="nav-link dropdown-toggle p-0"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    style="display: inline-block"
+                  >
+                    <span class="caret"></span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="">Admissions Form</a>
+                    <a class="dropdown-item" href=""
+                      >Admission Rules as per DTE</a
+                    >
+                    <a class="dropdown-item" href="">Fee Structure</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown view d-flex align-items-center">
+                  <a
+                    class="nav-link @@about"
+                    href=""
+                    id="aboutLink"
+                    style="
+                      display: inline-block;
+                      margin-right: 5px;
+                      padding: 10px 0px 10px 0px;
+                    "
+                  >
+                    Students
+                  </a>
+                  <a
+                    class="nav-link dropdown-toggle p-0"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    style="display: inline-block"
+                  >
+                    <span class="caret"></span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        D.Pharm Students
+                      </a>
+                    </div>
+                    <div class="dropdown-submenu">
+                      <a
+                        class="dropdown-item d-flex gap- justify-content-between align-items-center submenu-toggle"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        B.Pharm Students
+                      </a>
+
+                      <div
+                        class="dropdown-menu submenu"
+                        style="
+                          top: 0;
+                          left: 100%;
+                          display: none;
+                          position: absolute;
+                          min-width: 200px;
+                        "
+                      >
+                        <a class="dropdown-item" href="">B.Pharm I Year</a>
+                        <a class="dropdown-item" href="">B.Pharm II Year</a>
+                        <a class="dropdown-item" href="">B.Pharm III Year</a>
+                        <a class="dropdown-item" href="">B.Pharm IV Year</a>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        M.Pharm Students
+                      </a>
+                    </div>
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        Alumni
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown view d-flex align-items-center">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    style="padding: 10px 15px"
+                  >
+                    T & P
+                  </a>
+
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                    style="min-width: 220px"
+                  >
+                    <div class="dropdown-submenu">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center submenu-toggle"
+                        href="#"
+                        style="padding: 10px 15px"
+                      >
+                        Placement Data
+                      </a>
+
+                      <div
+                        class="dropdown-menu submenu"
+                        style="
+                          top: 0;
+                          left: 100%;
+                          display: none;
+                          position: absolute;
+                          min-width: 200px;
+                        "
+                      >
+                        <a
+                          class="dropdown-item"
+                          href="/images/placementData/2018-2022 placements.pdf"
+                          >B.Pharm 2018 Batch</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/images/placementData/2017-2021 placements.pdf"
+                          >B.Pharm 2017 Batch</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/images/placementData/2016-2020 placements.pdf"
+                          >B.Pharm 2016 Batch</a
+                        >
+                      </div>
                     </div>
 
-                    <div class="collapse navbar-collapse" id="navigation">
-                        <ul class="navbar-nav ml-auto text-center" style="padding-left: 0px;" style="height: 2rem;">
+                    <div class="dropdown-submenu">
+                      <a
+                        class="dropdown-item d-flex justify-content-between align-items-center submenu-toggle"
+                        style="padding: 10px 15px"
+                        href="#"
+                      >
+                        Training Data
+                      </a>
 
-                            <li class="nav-item dropdown view d-flex align-items-center">
-                                <a class="nav-link" href="index.html" id="aboutLink"
-                                    style="display: inline-block;padding:15px 0px 15px 0px;">
-                                    Home
-                                </a>
+                      <div
+                        class="dropdown-menu submenu"
+                        style="
+                          top: 0;
+                          left: 100%;
+                          display: none;
+                          position: absolute;
+                          min-width: 200px;
+                        "
+                      >
+                        <a
+                          class="dropdown-item"
+                          href="/images/trainingData/2019.pdf"
+                          >B.Pharm 2019 Batch</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/images/trainingData/2018.pdf"
+                          >B.Pharm 2018 Batch</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/images/trainingData/2017.pdf"
+                          >B.Pharm 2017 Batch</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/images/trainingData/2016.pdf"
+                          >B.Pharm 2016 Batch</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
 
-                            </li>
+                <li class="nav-item dropdown view d-flex align-items-center">
+                  <a
+                    class="nav-link @@about"
+                    href=""
+                    id="aboutLink"
+                    style="
+                      display: inline-block;
+                      margin-right: 5px;
+                      padding: 10px 0px 10px 0px;
+                    "
+                  >
+                    Committees
+                  </a>
+                  <a
+                    class="nav-link dropdown-toggle p-0"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    style="display: inline-block"
+                  >
+                    <span class="caret"></span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="">
+                      INTERNAL COMPLAINT COMMITTEE</a
+                    >
+                    <a class="dropdown-item" href="">STUDENT COUNSELOR</a>
+                    <a class="dropdown-item" href="">IPR CELL</a>
+                    <a class="dropdown-item" href="">SC-ST CELL</a>
+                    <a class="dropdown-item" href=""
+                      >GREIVIANCE REDRESSAL CELL</a
+                    >
+                    <a class="dropdown-item" href="">PHYSICAL TRAINER</a>
+                    <a class="dropdown-item" href="">INOVATION CELL</a>
+                    <a class="dropdown-item" href=""
+                      >GENDER SENCITIZATION CELL</a
+                    >
+                    <a class="dropdown-item" href=""
+                      >QUALITY ASSURANCE COMMITTEE</a
+                    >
+                    <a class="dropdown-item" href="">MANDATORY DISCLOSURE</a>
+                    <a class="dropdown-item" href=""
+                      >INDUSTRY INTERACTION CELL</a
+                    >
+                    <a class="dropdown-item" href=""
+                      >ANTI DESCRIMINATION CELL</a
+                    >
+                    <a class="dropdown-item" href="./images/MOU.pdf">MOU</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown view d-flex align-items-center">
+                  <a
+                    class="nav-link @@about"
+                    href="nbr-e-sar.html"
+                    id="aboutLink"
+                    style="
+                      display: inline-block;
+                      margin-right: 5px;
+                      padding: 10px 0px 10px 0px;
+                    "
+                  >
+                    NBA-E-SAR
+                  </a>
+                </li>
+                <li class="nav-item dropdown view d-flex align-items-center">
+                  <a
+                    class="nav-link @@about"
+                    href="nirf.html"
+                    id="aboutLink"
+                    style="
+                      display: inline-block;
+                      margin-right: 5px;
+                      padding: 10px 0px 10px 0px;
+                      font-size: 12px;
+                    "
+                  >
+                    NIRF-2024
+                  </a>
+                </li>
+                <li class="nav-item dropdown view d-flex align-items-center">
+                  <a
+                    class="nav-link @@about"
+                    href=""
+                    id="aboutLink"
+                    style="
+                      display: inline-block;
+                      margin-right: 5px;
+                      padding: 10px 0px 10px 0px;
+                    "
+                  >
+                    CONTACT
+                  </a>
+                </li>
 
-
-                            <li class="nav-item dropdown view d-flex align-items-center asdfasdfas" id="asdfasdfas">
-                                <a class="nav-link @@about" href="about.html" id="aboutLink"
-                                    style="display: inline-block; margin-right: 5px;padding: 10px 0px 10px 0px;">
-                                    About
-                                </a>
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    style="display: inline-block;">
-                                    <span class="caret"></span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="">BOG Members Message</a>
-                                    <a class="dropdown-item" href="">Director/Principal Message</a>
-                                    <a class="dropdown-item" href="">Affiliation & MOU's</a>
-                                    <a class="dropdown-item" href="">Courses Offered</a>
-                                    <a class="dropdown-item" href="">Antiragging</a>
-                                    <a class="dropdown-item" href="">Infrastructure & facilities</a>
-                                    <a class="dropdown-item" href="">IIC</a>
-                                    <a class="dropdown-item" href="">IAEC</a>
-                                    <a class="dropdown-item" href="">PO's / PEO's / GA's</a>
-                                    <a class="dropdown-item" href="">News Letter</a>
-                                    <a class="dropdown-item" href="">Leave Policies</a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item dropdown view d-flex align-items-center">
-                                <a class="nav-link @@about" href="" id="aboutLink"
-                                    style="display: inline-block; margin-right: 5px;padding: 10px 0px 10px 0px;">
-                                    Academics
-                                </a>
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    style="display: inline-block;">
-                                    <span class="caret"></span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <div class="dropdown-submenu">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center submenu-toggle"
-                                            style="padding: 10px 15px;" href="#">
-                                            Faculty & staffs
-                                        </a>
-
-                                        <div class="dropdown-menu submenu"
-                                            style="top: 0; left: 100%; display: none; position: absolute; min-width: 200px;">
-                                            <a class="dropdown-item" href="">
-                                                Faculty Details 2023-2024</a>
-                                       
-                                        </div>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            style="padding: 10px 15px;" href="#">
-                                            Academic Calender
-                                        </a>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            style="padding: 10px 15px;" href="#">
-                                            Time Table
-                                        </a>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            style="padding: 10px 15px;" href="#">
-                                            Syllabus
-                                        </a>
-                                    </div>
-                                    <div class="dropdown-submenu">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center submenu-toggle"
-                                            style="padding: 10px 15px;" href="#">
-                                            Research and Awards
-                                        </a>
-
-                                        <div class="dropdown-menu submenu"
-                                            style="top: 0; left: 100%; display: none; position: absolute; min-width: 200px;">
-                                            <a class="dropdown-item" href="">
-                                                Year 2018-2023</a>
-                                       
-                                        </div>
-                                    </div>
-                                    <div class="dropdown-submenu">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center submenu-toggle"
-                                            style="padding: 10px 15px;" href="#">
-                                            E Learning Material
-                                        </a>
-
-                                        <div class="dropdown-menu submenu"
-                                            style="top: 0; left: 100%; display: none; position: absolute; min-width: 200px;">
-                                            <a class="dropdown-item" href="">B.Pharm I
-                                                Year</a>
-                                            <a class="dropdown-item" href="">B.Pharm II
-                                                Year</a>
-                                            <a class="dropdown-item" href="">B.Pharm III
-                                                Year</a>
-                                            <a class="dropdown-item" href="">B.Pharm IV
-                                                Year</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            style="padding: 10px 15px;" href="#">
-                                            Academic Rules
-                                        </a>
-                                    </div> <div class="dropdown">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            style="padding: 10px 15px;" href="#">
-                                            RGPV University Examination Rules book
-                                        </a>
-                                    </div> <div class="dropdown">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            style="padding: 10px 15px;" href="#">
-                                            Attendence Rules
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="nav-item dropdown view d-flex align-items-center">
-                                <a class="nav-link @@about" href="" id="aboutLink"
-                                    style="display: inline-block; margin-right: 5px;padding: 10px 0px 10px 0px;">
-                                    Admissions
-                                </a>
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    style="display: inline-block;">
-                                    <span class="caret"></span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="">Admissions Form</a>
-                                    <a class="dropdown-item" href="">Admission Rules as per DTE</a>
-                                    <a class="dropdown-item" href="">Fee Structure</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown view d-flex align-items-center">
-                                <a class="nav-link @@about" href="" id="aboutLink"
-                                    style="display: inline-block; margin-right: 5px; padding: 10px 0px 10px 0px;">
-                                    Students
-                                </a>
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    style="display: inline-block;">
-                                    <span class="caret"></span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <div class="dropdown">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            style="padding: 10px 15px;" href="#">
-                                            D.Pharm Students
-                                        </a>
-                                    </div>
-                                    <div class="dropdown-submenu">
-                                        <a class="dropdown-item d-flex gap- justify-content-between align-items-center submenu-toggle"
-                                            style="padding: 10px 15px;" href="#">
-                                            B.Pharm Students
-                                        </a>
-
-                                        <div class="dropdown-menu submenu"
-                                            style="top: 0; left: 100%; display: none; position: absolute; min-width: 200px;">
-                                            <a class="dropdown-item" href="">B.Pharm I
-                                                Year</a>
-                                            <a class="dropdown-item" href="">B.Pharm II
-                                                Year</a>
-                                            <a class="dropdown-item" href="">B.Pharm III
-                                                Year</a>
-                                            <a class="dropdown-item" href="">B.Pharm IV
-                                                Year</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            style="padding: 10px 15px;" href="#">
-                                            M.Pharm Students
-                                        </a>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            style="padding: 10px 15px;" href="#">
-                                            Alumni
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-
-
-
-
-
-
-
-                            <li class="nav-item dropdown view d-flex align-items-center">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    style="padding: 10px 15px;">
-                                    T & P
-                                </a>
-
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 220px;">
-                                    <div class="dropdown-submenu">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center submenu-toggle"
-                                            href="#" style="padding: 10px 15px;">
-                                            Placement Data
-                                        </a>
-
-                                        <div class="dropdown-menu submenu"
-                                            style="top: 0; left: 100%; display: none; position: absolute; min-width: 200px;">
-                                            <a class="dropdown-item"
-                                                href="/images/placementData/2018-2022 placements.pdf">B.Pharm 2018
-                                                Batch</a>
-                                            <a class="dropdown-item"
-                                                href="/images/placementData/2017-2021 placements.pdf">B.Pharm 2017
-                                                Batch</a>
-                                            <a class="dropdown-item"
-                                                href="/images/placementData/2016-2020 placements.pdf">B.Pharm 2016
-                                                Batch</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="dropdown-submenu">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center submenu-toggle"
-                                            style="padding: 10px 15px;" href="#">
-                                            Training Data
-                                        </a>
-
-                                        <div class="dropdown-menu submenu"
-                                            style="top: 0; left: 100%; display: none; position: absolute; min-width: 200px;">
-                                            <a class="dropdown-item" href="/images/trainingData/2019.pdf">B.Pharm 2019
-                                                Batch</a>
-                                            <a class="dropdown-item" href="/images/trainingData/2018.pdf">B.Pharm 2018
-                                                Batch</a>
-                                            <a class="dropdown-item" href="/images/trainingData/2017.pdf">B.Pharm 2017
-                                                Batch</a>
-                                            <a class="dropdown-item" href="/images/trainingData/2016.pdf">B.Pharm 2016
-                                                Batch</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-
-
-                            
-
-
-
-
-
-
-
-                            <li class="nav-item dropdown view d-flex align-items-center">
-                                <a class="nav-link @@about" href="" id="aboutLink"
-                                    style="display: inline-block; margin-right: 5px;padding: 10px 0px 10px 0px;">
-                                    Committees
-                                </a>
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    style="display: inline-block;">
-                                    <span class="caret"></span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href=""> INTERNAL COMPLAINT COMMITTEE</a>
-                                    <a class="dropdown-item" href="">STUDENT COUNSELOR</a>
-                                    <a class="dropdown-item" href="">IPR CELL</a>
-                                    <a class="dropdown-item" href="">SC-ST CELL</a>
-                                    <a class="dropdown-item" href="">GREIVIANCE REDRESSAL CELL</a>
-                                    <a class="dropdown-item" href="">PHYSICAL TRAINER</a>
-                                    <a class="dropdown-item" href="">INOVATION CELL</a>
-                                    <a class="dropdown-item" href="">GENDER SENCITIZATION CELL</a>
-                                    <a class="dropdown-item" href="">QUALITY ASSURANCE COMMITTEE</a>
-                                    <a class="dropdown-item" href="">MANDATORY DISCLOSURE</a>
-                                    <a class="dropdown-item" href="">INDUSTRY INTERACTION CELL</a>
-                                    <a class="dropdown-item" href="">ANTI DESCRIMINATION CELL</a>
-                                    <a class="dropdown-item" href="./images/MOU.pdf">MOU</a>
-
-
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown view d-flex align-items-center">
-                                <a class="nav-link @@about" href="nbr-e-sar.html" id="aboutLink"
-                                    style="display: inline-block; margin-right: 5px;padding: 10px 0px 10px 0px;">
-                                    NBA-E-SAR
-                                </a>
-
-                            </li>
-                            <li class="nav-item dropdown view d-flex align-items-center">
-                                <a class="nav-link @@about" href="nirf.html" id="aboutLink"
-                                    style="display: inline-block; margin-right: 5px;padding: 10px 0px 10px 0px; font-size: 12px;">
-                                    NIRF-2024
-                                </a>
-
-                            </li>
-                            <li class="nav-item dropdown view d-flex align-items-center">
-                                <a class="nav-link @@about" href="" id="aboutLink"
-                                    style="display: inline-block; margin-right: 5px;padding: 10px 0px 10px 0px;">
-                                    CONTACT
-                                </a>
-
-                            </li>
-
-
-
-
-
-                            
-                            <!-- <li class="nav-item dropdown view d-flex align-items-center">
+                <!-- <li class="nav-item dropdown view d-flex align-items-center">
                                 <a class="nav-link @@about" href="index.html" id="aboutLink"
                                     style="display: inline-block; margin-right: 5px;padding: 10px 0px 10px 0px;">
                                     ERP Login
@@ -432,17 +620,13 @@
                                 <a class="dropdown-item" href="teacher.html">Procedure</a>
                             </div>
                             </li> -->
-
-                        </ul>
-                    </div>
-                </nav>
+              </ul>
             </div>
+          </nav>
         </div>
+      </div>
     </header>
     <!-- /header -->
-
-
-
 
     <!-- jQuery -->
     <script src="plugins/jQuery/jquery.min.js"></script>
@@ -457,43 +641,33 @@
     <!-- mixitup filter -->
     <script src="plugins/mixitup/mixitup.min.js"></script>
     <!-- google map -->
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
     <script src="plugins/google-map/gmap.js"></script>
 
     <script>
-        console.log("Page Loaded");
-        document.addEventListener("DOMContentLoaded", function () {
-    
-            // Select all dropdown items
-            const dropdowns = document.querySelectorAll('.nav-item.dropdown');
-    
-            dropdowns.forEach(dropdown => {
-                const dropdownMenu = dropdown.querySelector('.dropdown-menu');
-    
-                // Open dropdown on hover
-                dropdown.addEventListener("mouseenter", function () {
-                    dropdown.classList.add('show');
-                    dropdownMenu.classList.add('show');
-                    console.log("Dropdown opened");
-                });
-    
-                // Close dropdown on mouse leave
-                dropdown.addEventListener("mouseleave", function () {
-                    dropdown.classList.remove('show');
-                    dropdownMenu.classList.remove('show');
-                    console.log("Dropdown closed");
-                });
-            });
+      console.log("Page Loaded");
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select all dropdown items
+        const dropdowns = document.querySelectorAll(".nav-item.dropdown");
+
+        dropdowns.forEach((dropdown) => {
+          const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+
+          // Open dropdown on hover
+          dropdown.addEventListener("mouseenter", function () {
+            dropdown.classList.add("show");
+            dropdownMenu.classList.add("show");
+            console.log("Dropdown opened");
+          });
+
+          // Close dropdown on mouse leave
+          dropdown.addEventListener("mouseleave", function () {
+            dropdown.classList.remove("show");
+            dropdownMenu.classList.remove("show");
+            console.log("Dropdown closed");
+          });
         });
+      });
     </script>
-    
-
-
-
-
-
-</body>
-
-
+  </body>
 </html>
