@@ -31,6 +31,46 @@
   <link rel="icon" href="images/trubalogo.png">
 
 </head>
+<style>
+  .lupin_logo{
+    width: 100%;
+    height: 6rem;
+  }
+  .sun_logo{
+    height: 6rem;
+  }
+  .tcs_logo{
+    width: 118%;
+    height: 5rem;
+  }
+  .banner_img{
+    height: 20rem;
+  }
+  @media (max-width: 600px) {
+    .about_content {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+    .learn_more_btn{
+      text-align: center;
+    }
+    .lupin_logo{
+      height:100%;
+    }
+    .sun_logo{
+      height: 100%;
+      width: 80%;
+    }
+    .tcs_logo{
+      width: 100%;
+      height: 100%;
+    }
+    .banner_img{
+      height: 100%;
+    }
+  }
+</style>
+
 
 <body>
 
@@ -177,15 +217,15 @@ left: 72rem;">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-xl-4 col-lg-5 align-self-start  ">
-          <img class="img-fluid w-100" src="images/pharamcy/Pharmacy4.png" style="height: 20rem;" alt="banner-feature">
-          <img class="img-fluid w-100" src="images/testabout.jpg" style="height: 20rem;" alt="banner-feature">
+          <img class="w-100 banner_img" src="images/pharamcy/Pharmacy4.png"  alt="banner-feature">
+          <img class=" w-100 banner_img" src="images/testabout.jpg"  alt="banner-feature">
 
 
 
         </div>
         <div class="col-xl-8 col-lg-7">
           <div class="row feature-blocks bg-gray justify-content-between">
-            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left about_content">
               <i class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
               <h3 class="mb-xl-4 mb-lg-3 mb-4">Why Choose TRUBA </h3>
               <p style="text-align: justify;">As one of Bhopal's largest and most diverse institutes, we prepare
@@ -195,7 +235,7 @@ left: 72rem;">
 
               </p>
             </div>
-            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left about_content">
               <i class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
               <h3 class="mb-xl-4 mb-lg-3 mb-4"> Affordability
               </h3>
@@ -204,7 +244,7 @@ left: 72rem;">
                 diverse backgrounds.
               </p>
             </div>
-            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left about_content">
               <i class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
               <h3 class="mb-xl-4 mb-lg-3 mb-4">Academics</h3>
               <p style="text-align: justify;">Education at Truba offers endless opportunities, with courses led by
@@ -212,7 +252,7 @@ left: 72rem;">
                 successful future.
               </p>
             </div>
-            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left about_content">
               <i class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
               <h3 class="mb-xl-4 mb-lg-3 mb-4">Inspiring Student Life</h3>
               <p style="text-align: justify;">Truba's residential system enhances learning by connecting students with
@@ -240,8 +280,8 @@ left: 72rem;">
             the name of LORD "TIRUPATI BALAJI
             Truba Institute of Pharmacy have been with Top Minds since 2004
             We are united in our mission to solve real-world problems for a better and healthy tomorrow.</p>
-          <a href="about.html" class="btn btn-primary-outline">Learn more</a>
-        </div>
+<div class="learn_more_btn">          <a href="about.html" class="btn btn-primary-outline">Learn more</a>
+</div>        </div>
         <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
           <img class="img-fluid w-100" src="images/home-side.jpg" alt="about image">
         </div>
@@ -279,7 +319,9 @@ left: 72rem;">
                 Truba Institute of Pharmacy has it all. From academic excellence
                 to personal growth, you'll find opportunities that suit your aspirations. Discover a fulfilling college
                 experience at Truba. </p>
+                <div class="learn_more_btn">
                 <a href="#" class="btn btn-primary btn-sm">Apply now</a>
+              </div>
             </div>
           </div>
         </div>
@@ -296,8 +338,9 @@ left: 72rem;">
                  frontiers of knowledge with the exceptional resources at TIP. Embrace 
                  opportunities for growth, skill development, and success, all designed 
                  to empower you for a bright future ahead. </p>
-              <a href="" class="btn btn-primary btn-sm">Apply now</a>
-            </div>
+                 <div class="learn_more_btn">
+                  <a href="#" class="btn btn-primary btn-sm">Apply now</a>
+                </div>            </div>
           </div>
         </div>
         <!-- course item -->
@@ -309,8 +352,9 @@ left: 72rem;">
                 <h4 class="card-title">Continuing Education with M.Pharm</h4>
               </a>
               <p class="card-text mb-4" style="text-align: justify;">Truba offers a postgraduate M.Pharm program specializing in Pharmacology, providing advanced education and research opportunities. This course equips students with in-depth knowledge, practical skills, and expertise to excel in the dynamic field of pharmaceutical sciences.</p>
-              <a href="" class="btn btn-primary btn-sm">Apply now</a>
-            </div>
+              <div class="learn_more_btn">
+                <a href="#" class="btn btn-primary btn-sm">Apply now</a>
+              </div>            </div>
           </div>
         </div>
       </div>
@@ -540,8 +584,8 @@ left: 72rem;">
 
             <div class="card-body">
               <a href="">
-                <h4 class="card-title"><img src="images/company log/Company Logo- Lupin.jpg"
-                    style="width: 100%; height: 6rem;" alt=""></h4>
+                <h4 class="card-title" ><img src="images/company log/Company Logo- Lupin.jpg"
+                     class="lupin_logo" alt=""></h4>
               </a>
             </div>
           </div>
@@ -552,7 +596,7 @@ left: 72rem;">
             <div class="card-body">
               <a href="">
                 <h4 class="card-title" style="text-align: center;"><img
-                    src="images/company log/Company Logo- SUN Pharma.jpeg" style=" height: 6rem;" alt=""></h4>
+                    src="images/company log/Company Logo- SUN Pharma.jpeg" class="sun_logo" alt=""></h4>
               </a>
             </div>
           </div>
@@ -563,7 +607,7 @@ left: 72rem;">
             <div class="card-body">
               <a href="">
                 <h4 class="card-title"><img src="images/company log/Company Logo- SYNCOM Heathcare Limited.png"
-                    style="width: 100%;height: 6rem;" alt=""></h4>
+                    class="lupin_logo" alt=""></h4>
               </a>
             </div>
           </div>
@@ -573,7 +617,7 @@ left: 72rem;">
 
             <div class="card-body">
               <a href="">
-                <h4 class="card-title"><img src="images/company log/secure.png" style="width: 100%;height: 6rem;"
+                <h4 class="card-title"><img src="images/company log/secure.png" class="lupin_logo"
                     alt=""></h4>
               </a>
             </div>
@@ -585,7 +629,7 @@ left: 72rem;">
             <div class="card-body">
               <a href="">
                 <h4 class="card-title" style="text-align: start;"><img src="images/company log/TCS.png"
-                    style="width: 118%;height: 5rem;" alt=""></h4>
+                   class="tcs_logo" alt=""></h4>
               </a>
             </div>
           </div>

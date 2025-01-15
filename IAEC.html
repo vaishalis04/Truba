@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IAEC - Institutional Animal Ethic Committee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-color: #f8f9fa;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .content-section {
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .btn-custom {
+      margin-top: 10px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+    <!-- header -->
+<div id="header-container"></div>
+<!-- /header -->
+  <div class="container mt-5">
+    <div class="hero">
+      <h1>Institutional Animal Ethic Committee (IAEC)</h1>
+      <p>Standard Operating Procedure for Institutional Animal Ethic Committee</p>
+    </div>
+
+    <div class="content-section">
+      <h3>Introduction</h3>
+      <p>The Committee for the Purpose of Control and Supervision of Experiments on Animals (CPCSEA) has been constituted under the provisions of the Prevention of Cruelty to Animals (PCA) Act, 1960. It gives the guidelines for the conduct of animal experiments.</p>
+      <ul>
+        <li>Animals are maintained in a proper and healthy manner.</li>
+        <li>Animals are not subjected to unnecessary pain or suffering before, during, and after performance of experiments on them.</li>
+        <li>There is no unnecessary sacrifice of animals for the sake of science. There should be no duplication of research.</li>
+        <li>Animals are kept in disease-free condition to ensure proper data collection.</li>
+        <li>Animals are procured from registered breeders.</li>
+        <li>Experiments on large animals are to be avoided whenever possible by using small laboratory animals.</li>
+        <li>IAEC ensures ethical procedures in animal experimentation with scientific oversight.</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h3>Function of IAEC</h3>
+      <p>IAEC provides independent, competent, and timely review of proposed studies and regularly monitors ongoing studies. It reviews and approves all research proposals involving animal experiments to assure quality maintenance and welfare of animals used in laboratory studies.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>Permission for Animal Experiments</h3>
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <th>Name and address of establishment</th>
+            <td>TRUBA INSTITUTE OF PHARMACY, BHOPAL</td>
+          </tr>
+          <tr>
+            <th>Registration number and date</th>
+            <td>Reg. No: 1196/PO/Re/S/08/CPCSEA, Date: 21/04/2008</td>
+          </tr>
+          <tr>
+            <th>Breeder details</th>
+            <td>National Institute of Nutrition, ICMR, Hyderabad-500007</td>
+          </tr>
+          <tr>
+            <th>Animal housing location</th>
+            <td>TRUBA INSTITUTE OF PHARMACY, BHOPAL</td>
+          </tr>
+          <tr>
+            <th>Experiment location</th>
+            <td>TRUBA INSTITUTE OF PHARMACY, BHOPAL (Reg. No: 1196/PO/Re/S/08/CPCSEA)</td>
+          </tr>
+          <tr>
+            <th>Experiment duration</th>
+            <td>June 2022 - November 2023</td>
+          </tr>
+          <tr>
+            <th>Type of research</th>
+            <td>Basic Research</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <img src="./images/about/IAEC/IMG_20221130_143319_2-min-scaled.jpg" alt="IAEC Facility Image 1">
+      </div>
+      <div class="col-md-6">
+        <img src="./images/about/IAEC/IMG_20221130_144202_Burst10-min-1536x692.jpg" alt="IAEC Facility Image 2">
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-bottom: 5rem;">
+      <a href="./images/about/IAEC/New Form BFeb_2022 (1).pdf" style="margin-right:  3rem;" class="btn btn-primary btn-custom ">Animal Experiment Form</a>
+      <a href="./images/about/IAEC/Proforma for Submission of Minutes of IAEC Meeting.pdf"  class="btn btn-primary btn-custom">IAEC Meeeting Form</a>
+
+    </div>
+  </div>
+  <!-- footer -->
+<div id="footer-container"></div>
+
+<!-- /footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch('header.html')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading the file:', error));
+  </script>
+  <script>
+    fetch('footer.html')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading the footer:', error));
+  </script>
+</body>
+
+</html>
